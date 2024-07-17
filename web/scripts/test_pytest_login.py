@@ -46,3 +46,6 @@ class TestLogin:
 
         # 点击登录
         self.driver.find_element(By.NAME, "sbtbutton").click()
+
+        print(self.driver.find_element(By.CLASS_NAME, "userinfo").text)
+        assert "13812347863" == self.driver.find_element(By.CLASS_NAME, "userinfo").text
