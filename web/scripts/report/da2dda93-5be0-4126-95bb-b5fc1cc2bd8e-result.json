@@ -1,0 +1,48 @@
+{
+  "name": "test_login02",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '用户名不能为空!' == '信息\\n用户名不能为空!\\n确定'\n  \n  - 信息\n  - 用户名不能为空!\n  ?         -\n  + 用户名不能为空!\n  - 确定",
+    "trace": "self = <scripts.test_login_assert.TestLogin object at 0x0000023DFC791FF0>\n\n    def test_login02(self):\n        # 用户名\n        self.driver.find_element(By.ID, \"username\").send_keys(\"\")\n    \n        # 密码\n        self.driver.find_element(By.ID, \"password\").send_keys(\"123456\")\n    \n        # 验证码\n        self.driver.find_element(By.ID, \"verify_code\").send_keys(\"8888\")\n    \n        # 点击登录\n        self.driver.find_element(By.NAME, \"sbtbutton\").click()\n    \n        # 断言\n    \n>       assert \"用户名不能为空!\" == self.driver.find_element(By.CSS_SELECTOR, \".layui-layer.layui-layer-dialog.layer-anim\").text\nE       AssertionError: assert '用户名不能为空!' == '信息\\n用户名不能为空!\\n确定'\nE         \nE         - 信息\nE         - 用户名不能为空!\nE         ?         -\nE         + 用户名不能为空!\nE         - 确定\n\ntest_login_assert.py:59: AssertionError"
+  },
+  "start": 1721226386135,
+  "stop": 1721226386252,
+  "uuid": "1ac32247-1bdd-4be9-aa58-bd3f28a500fd",
+  "historyId": "e7cd56c058b216707f71450f818a2f19",
+  "testCaseId": "e7cd56c058b216707f71450f818a2f19",
+  "fullName": "scripts.test_login_assert.TestLogin#test_login02",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test_login_assert"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "Lin"
+    },
+    {
+      "name": "thread",
+      "value": "14196-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test_login_assert"
+    }
+  ]
+}

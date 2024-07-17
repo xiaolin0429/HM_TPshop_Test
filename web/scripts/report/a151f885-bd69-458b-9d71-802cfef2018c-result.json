@@ -1,0 +1,48 @@
+{
+  "name": "test_login02",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '用户名不能为空!' in ''\n +  where '' = <selenium.webdriver.remote.webelement.WebElement (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\", element=\"f.DAE06C834EE43B30BBB579A2316747E5.d.663F17F066C555BD3AA0ED976511101E.e.30\")>.text\n +    where <selenium.webdriver.remote.webelement.WebElement (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\", element=\"f.DAE06C834EE43B30BBB579A2316747E5.d.663F17F066C555BD3AA0ED976511101E.e.30\")> = <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")>>('css selector', '.layui-layer.layui-layer-dialog.layer-anim')\n +      where <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")>> = <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")>.find_element\n +        where <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")> = <scripts.test_login_assert.TestLogin object at 0x000001CE8C5B2170>.driver\n +      and   'css selector' = By.CSS_SELECTOR",
+    "trace": "self = <scripts.test_login_assert.TestLogin object at 0x000001CE8C5B2170>\n\n    def test_login02(self):\n        # 用户名\n        self.driver.find_element(By.ID, \"username\").send_keys(\"\")\n    \n        # 密码\n        self.driver.find_element(By.ID, \"password\").send_keys(\"123456\")\n    \n        # 验证码\n        self.driver.find_element(By.ID, \"verify_code\").send_keys(\"8888\")\n    \n        # 点击登录\n        self.driver.find_element(By.NAME, \"sbtbutton\").click()\n    \n        # 断言\n    \n>       assert \"用户名不能为空!\" in self.driver.find_element(By.CSS_SELECTOR, \".layui-layer.layui-layer-dialog.layer-anim\").text\nE       assert '用户名不能为空!' in ''\nE        +  where '' = <selenium.webdriver.remote.webelement.WebElement (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\", element=\"f.DAE06C834EE43B30BBB579A2316747E5.d.663F17F066C555BD3AA0ED976511101E.e.30\")>.text\nE        +    where <selenium.webdriver.remote.webelement.WebElement (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\", element=\"f.DAE06C834EE43B30BBB579A2316747E5.d.663F17F066C555BD3AA0ED976511101E.e.30\")> = <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")>>('css selector', '.layui-layer.layui-layer-dialog.layer-anim')\nE        +      where <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")>> = <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")>.find_element\nE        +        where <selenium.webdriver.edge.webdriver.WebDriver (session=\"6fbd639d1cd24e6ab33bfe4024ba6324\")> = <scripts.test_login_assert.TestLogin object at 0x000001CE8C5B2170>.driver\nE        +      and   'css selector' = By.CSS_SELECTOR\n\ntest_login_assert.py:59: AssertionError"
+  },
+  "start": 1721226403197,
+  "stop": 1721226403314,
+  "uuid": "996267f3-7cf9-465d-9a95-93151bd21221",
+  "historyId": "e7cd56c058b216707f71450f818a2f19",
+  "testCaseId": "e7cd56c058b216707f71450f818a2f19",
+  "fullName": "scripts.test_login_assert.TestLogin#test_login02",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test_login_assert"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "Lin"
+    },
+    {
+      "name": "thread",
+      "value": "21260-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test_login_assert"
+    }
+  ]
+}

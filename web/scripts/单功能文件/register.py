@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from web.tools.edgeDriver import get_EdgeDriver, quit_driver
 
 # 打开网页
-driver = get_EdgeDriver("https://hmshop-test.itheima.net/")
+driver = get_EdgeDriver("http://192.168.249.130/index.php")
 
 # 页面操作
 # 进入注册页面

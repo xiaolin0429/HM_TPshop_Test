@@ -3,6 +3,7 @@
 """
 
 from selenium.webdriver.common.by import By
+
 from admin.tools.edgeDriver import get_EdgeDriver
 
 
@@ -15,8 +16,8 @@ def login(driver, username, password, vertify):
 
 def get_login():
     # 页面操作
-    driver = get_EdgeDriver("https://hmshop-test.itheima.net/index.php/Admin/Admin/login")
+    driver = get_EdgeDriver("http://192.168.249.130/index.php/Admin/Admin/login")
     # 登录
-    login(driver, "admin", "HM_2023_test", "8888")
+    login(driver, "admin", "123456", "8888")
     # 返回
     return driver

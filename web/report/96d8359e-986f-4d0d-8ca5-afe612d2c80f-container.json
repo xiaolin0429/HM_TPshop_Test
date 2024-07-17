@@ -1,0 +1,13 @@
+{
+  "uuid": "139d6717-910f-4ecd-9059-f26c65b914d8",
+  "befores": [
+    {
+      "name": "verify_code",
+      "status": "passed",
+      "start": 1721224672471,
+      "stop": 1721224672471
+    }
+  ],
+  "start": 1721224672471,
+  "stop": 1721224672569
+}

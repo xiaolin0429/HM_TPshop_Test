@@ -1,8 +1,9 @@
 import time
+
 from selenium.webdriver.common.by import By
 
-from web.tools.login import login
 from web.tools.edgeDriver import quit_driver
+from web.tools.login import login
 
 # 打开浏览器页面
 driver = login()

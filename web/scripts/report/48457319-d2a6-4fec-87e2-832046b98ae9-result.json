@@ -1,0 +1,48 @@
+{
+  "name": "test_login02",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '用户名不能为空!' in ''\n +  where '' = <selenium.webdriver.remote.webelement.WebElement (session=\"728513987f2606d1c8a0b5afbe279428\", element=\"f.0B1B2E0775C66548CA310AB0CC6D1FBD.d.D5A8D4B855E9B7DC4B8B97D7C2E371BB.e.30\")>.text\n +    where <selenium.webdriver.remote.webelement.WebElement (session=\"728513987f2606d1c8a0b5afbe279428\", element=\"f.0B1B2E0775C66548CA310AB0CC6D1FBD.d.D5A8D4B855E9B7DC4B8B97D7C2E371BB.e.30\")> = <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")>>('xpath', '/html/body/div[6]')\n +      where <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")>> = <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")>.find_element\n +        where <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")> = <scripts.test_login_assert.TestLogin object at 0x000002260A8321A0>.driver\n +      and   'xpath' = By.XPATH",
+    "trace": "self = <scripts.test_login_assert.TestLogin object at 0x000002260A8321A0>\n\n    def test_login02(self):\n        # 用户名\n        self.driver.find_element(By.ID, \"username\").send_keys(\"\")\n    \n        # 密码\n        self.driver.find_element(By.ID, \"password\").send_keys(\"123456\")\n    \n        # 验证码\n        self.driver.find_element(By.ID, \"verify_code\").send_keys(\"8888\")\n    \n        # 点击登录\n        self.driver.find_element(By.NAME, \"sbtbutton\").click()\n    \n        # 断言\n    \n>       assert \"用户名不能为空!\" in self.driver.find_element(By.XPATH, \"/html/body/div[6]\").text\nE       assert '用户名不能为空!' in ''\nE        +  where '' = <selenium.webdriver.remote.webelement.WebElement (session=\"728513987f2606d1c8a0b5afbe279428\", element=\"f.0B1B2E0775C66548CA310AB0CC6D1FBD.d.D5A8D4B855E9B7DC4B8B97D7C2E371BB.e.30\")>.text\nE        +    where <selenium.webdriver.remote.webelement.WebElement (session=\"728513987f2606d1c8a0b5afbe279428\", element=\"f.0B1B2E0775C66548CA310AB0CC6D1FBD.d.D5A8D4B855E9B7DC4B8B97D7C2E371BB.e.30\")> = <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")>>('xpath', '/html/body/div[6]')\nE        +      where <bound method WebDriver.find_element of <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")>> = <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")>.find_element\nE        +        where <selenium.webdriver.edge.webdriver.WebDriver (session=\"728513987f2606d1c8a0b5afbe279428\")> = <scripts.test_login_assert.TestLogin object at 0x000002260A8321A0>.driver\nE        +      and   'xpath' = By.XPATH\n\ntest_login_assert.py:59: AssertionError"
+  },
+  "start": 1721226886347,
+  "stop": 1721226886459,
+  "uuid": "3029442a-0b1b-497d-8385-0dd0991d4d08",
+  "historyId": "e7cd56c058b216707f71450f818a2f19",
+  "testCaseId": "e7cd56c058b216707f71450f818a2f19",
+  "fullName": "scripts.test_login_assert.TestLogin#test_login02",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test_login_assert"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "Lin"
+    },
+    {
+      "name": "thread",
+      "value": "7816-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test_login_assert"
+    }
+  ]
+}

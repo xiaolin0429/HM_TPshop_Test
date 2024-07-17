@@ -1,0 +1,44 @@
+{
+  "name": "test_login01",
+  "status": "passed",
+  "start": 1721228363429,
+  "stop": 1721228363555,
+  "uuid": "e81f2f67-f336-4c06-a385-90b97ab48645",
+  "historyId": "0300809199433f58fbfcdb65af368347",
+  "testCaseId": "0300809199433f58fbfcdb65af368347",
+  "fullName": "scripts.test_login_assert.TestLogin#test_login01",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test_login_assert"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "Lin"
+    },
+    {
+      "name": "thread",
+      "value": "10508-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test_login_assert"
+    }
+  ]
+}

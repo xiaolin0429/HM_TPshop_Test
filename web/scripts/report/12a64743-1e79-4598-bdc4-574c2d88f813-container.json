@@ -1,0 +1,24 @@
+{
+  "uuid": "0139b0d1-5018-4187-b38e-bdc5a87b70e1",
+  "children": [
+    "ab17f385-a65b-4b25-bc26-44efe101888f"
+  ],
+  "befores": [
+    {
+      "name": "_xunit_setup_method_fixture_TestLogin",
+      "status": "passed",
+      "start": 1721225550268,
+      "stop": 1721225550367
+    }
+  ],
+  "afters": [
+    {
+      "name": "_xunit_setup_method_fixture_TestLogin::0",
+      "status": "passed",
+      "start": 1721225550516,
+      "stop": 1721225553521
+    }
+  ],
+  "start": 1721225550268,
+  "stop": 1721225553521
+}

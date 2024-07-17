@@ -1,0 +1,13 @@
+{
+  "uuid": "60740db2-f16f-4def-8c0a-25eb84398961",
+  "befores": [
+    {
+      "name": "username",
+      "status": "passed",
+      "start": 1721224672471,
+      "stop": 1721224672471
+    }
+  ],
+  "start": 1721224672471,
+  "stop": 1721224672570
+}

@@ -1,4 +1,5 @@
 from selenium.webdriver.support.select import Select
+
 from admin.tools.edgeDriver import *
 from admin.tools.login import *
 
@@ -7,7 +8,7 @@ driver = get_login()
 
 
 # 点击商城功能
-time.sleep(1)
+time.sleep(2)
 driver.find_element(By.LINK_TEXT, "商城").click()
 
 # 点击商品

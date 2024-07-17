@@ -1,0 +1,58 @@
+{
+  "name": "test_login[13812347863--8888]",
+  "status": "passed",
+  "parameters": [
+    {
+      "name": "username",
+      "value": "'13812347863'"
+    },
+    {
+      "name": "password",
+      "value": "''"
+    },
+    {
+      "name": "verify_code",
+      "value": "'8888'"
+    }
+  ],
+  "start": 1721228430865,
+  "stop": 1721228430959,
+  "uuid": "939df986-4246-499d-9154-a2b11e82ae5f",
+  "historyId": "8d1725d26e98790ea2972ddf1c2c6531",
+  "testCaseId": "271a2d32072a5453558e7527f142fa03",
+  "fullName": "scripts.test_pytest_login.TestLogin#test_login",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test_pytest_login"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "Lin"
+    },
+    {
+      "name": "thread",
+      "value": "29108-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test_pytest_login"
+    }
+  ]
+}
