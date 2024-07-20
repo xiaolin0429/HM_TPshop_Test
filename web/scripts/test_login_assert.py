@@ -37,12 +37,11 @@ class TestLogin:
 
         # 点击登录
         self.driver.find_element(By.NAME, "sbtbutton").click()
-
+        time.sleep(2)
         # 断言
         print(
             self.driver.find_element(By.XPATH, "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text)
-        assert "用户名不能为空!" in self.driver.find_element(By.XPATH,
-                                                             "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text
+        assert "用户名不能为空!" in self.driver.find_element(By.XPATH, "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text
 
     def test_login02(self):
         # 用户名
@@ -56,12 +55,11 @@ class TestLogin:
 
         # 点击登录
         self.driver.find_element(By.NAME, "sbtbutton").click()
-
+        time.sleep(2)
         # 断言
         print(
             self.driver.find_element(By.XPATH, "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text)
-        assert "密码不能为空!" in self.driver.find_element(By.XPATH,
-                                                             "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text
+        assert "密码不能为空!" in self.driver.find_element(By.XPATH, "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text
 
     def test_login03(self):
         # 用户名
@@ -75,12 +73,11 @@ class TestLogin:
 
         # 点击登录
         self.driver.find_element(By.NAME, "sbtbutton").click()
-
+        time.sleep(2)
         # 断言
         print(
             self.driver.find_element(By.XPATH, "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text)
-        assert "验证码不能为空!" in self.driver.find_element(By.XPATH,
-                                                             "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text
+        assert "验证码不能为空!" in self.driver.find_element(By.XPATH, "//*[@class='layui-layer layui-layer-dialog  layer-anim']/div[2]").text
 
     def test_login04(self):
         # 用户名
@@ -94,7 +91,7 @@ class TestLogin:
 
         # 点击登录
         self.driver.find_element(By.NAME, "sbtbutton").click()
-
+        time.sleep(2)
         # 断言
         print(self.driver.find_element(By.CLASS_NAME, "userinfo").text)
         assert "13812347863" == self.driver.find_element(By.CLASS_NAME, "userinfo").text
