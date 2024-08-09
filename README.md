@@ -34,12 +34,22 @@ Python+pytest+allure
 ### 文件结构
 
 ```
-├── HM_TPshop_Test
-│   ├── admin
-│   │   ├── scripts
-│   ├── web
-│   │   ├── scripts
-│   │   │  ├── reports
-│   │   │  ├── test_data_json
-│   │   │  ├── test_files
-│   │   ├── pytest.ini
+project_root/
+│
+├── runner.py             # 运行测试并生成报告
+├── pytest.ini            # pytest配置文件
+├── README.md             # 项目说明文件
+│
+├── src/                  # 源代码和测试代码
+│   ├── test_data_json/   # 测试数据文件（可选，视用途）
+│   ├── tests/            # 测试文件
+│   │   ├── test_login_assert.py
+│   │   ├── test_pytest_login.py
+│   │   └── ...           # 其他测试文件
+│   └── ...               # 其他源代码
+│
+├── reports/              # 报告文件夹
+│   └── ...               # 测试生成的报告和HTML文件
+│
+└── tools/                # 工具文件夹
+    └── ...

@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from admin.tools.edgeDriver import *
 
 # 页面操作
-driver = get_EdgeDriver("http://192.168.249.130/index.php/index.php/Admin/Admin/login")
+driver = get_EdgeDriver("http://192.168.140.129/index.php/index.php/Admin/Admin/login")
 
 # 输入用户名
 driver.find_element(By.NAME, "username").send_keys("admin")

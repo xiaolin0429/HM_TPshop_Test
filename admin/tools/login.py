@@ -16,7 +16,7 @@ def login(driver, username, password, vertify):
 
 def get_login():
     # 页面操作
-    driver = get_EdgeDriver("http://192.168.249.130/index.php/Admin/Admin/login")
+    driver = get_EdgeDriver("http://192.168.140.129/index.php/Admin/Admin/login")
     # 登录
     login(driver, "admin", "123456", "8888")
     # 返回
