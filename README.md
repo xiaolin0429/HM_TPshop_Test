@@ -10,7 +10,7 @@ LNMP
 
 #### 使用说明
 自动化测试
-Python+pytest+allure
+Python+selenium+pytest+allure
 
 #### 完成进度
 
@@ -36,7 +36,7 @@ project_root/
 ├── README.md             # 项目说明文件
 │
 ├── src/                  # 源代码和测试代码
-│   ├── test_data_json/   # 测试数据文件（可选，视用途）
+│   ├── test_data_json/   # 测试数据文件
 │   ├── tests/            # 测试文件
 │   │   ├── test_login_assert.py
 │   │   ├── test_pytest_login.py
