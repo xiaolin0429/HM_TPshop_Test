@@ -8,12 +8,6 @@ HM_TPshop_Test: 自动化测试
 
 LNMP
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 使用说明
 自动化测试
 Python+pytest+allure
