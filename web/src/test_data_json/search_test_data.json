@@ -1,0 +1,24 @@
+[
+    {
+        "search_key": "iPhone",
+        "expected_results": [
+            "iPhone 6",
+            "iPhone 7 Plus",
+            "iPhone 15 Pro Max"
+        ]
+    },
+    {
+        "search_key": "Lenovo",
+        "expected_results": [
+            "Lenovo ThinkPad",
+            "Lenovo Yoga"
+        ]
+    },
+    {
+        "search_key": "vivo",
+        "expected_results": [
+            "vivo X21",
+            "vivo Y85"
+        ]
+    }
+]

@@ -21,7 +21,7 @@ class TestLogin:
     # 类前置处理
     def setup_class(self):
         # 打开浏览器
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Edge()
         self.driver.maximize_window()  # 最大化浏览器窗口
         self.driver.implicitly_wait(5)  # 隐式等待
 

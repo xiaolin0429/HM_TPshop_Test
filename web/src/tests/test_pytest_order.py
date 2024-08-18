@@ -22,7 +22,7 @@ class TestOrder:
 
     # 类前置处理
     def setup_class(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Edge()
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)  # 隐式等待
 
