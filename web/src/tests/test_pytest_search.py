@@ -17,7 +17,7 @@ def load_test_data():
         返回一个元组列表，每个元组包含一个搜索关键字和预期的搜索结果。
     """
     base_dir = os.path.dirname(__file__)
-    json_path = os.path.join(base_dir, "..", "test_data_json", "search_test_data.json")
+    json_path = os.path.join(base_dir, "..", "data", "search_test_data.json")
     with open(json_path, "r", encoding="utf-8") as file:
         data = json.load(file)
         return [(item["search_key"], item["expected_results"]) for item in data]

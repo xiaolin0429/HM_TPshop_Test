@@ -1,0 +1,26 @@
+[
+    {
+        "username": "wrong_user",
+        "password": "123456",
+        "vertify": "8888",
+        "expected_result": "账号密码不正确!"
+    },
+    {
+        "username": "admin",
+        "password": "wrong_password",
+        "vertify": "8888",
+        "expected_result": "账号密码不正确!"
+    },
+    {
+        "username": "admin",
+        "password": "123456",
+        "vertify": "wrong_vertify",
+        "expected_result": "验证码错误!"
+    },
+    {
+        "username": "admin",
+        "password": "123456",
+        "vertify": "8888",
+        "expected_result": "TPshop开源商城"
+    }
+]

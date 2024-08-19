@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # 调用测试数据
 def load_test_data():
     base_dir = os.path.dirname(__file__)  # 获取当前文件所在的目录
-    json_path = os.path.join(base_dir, '..', 'test_data_json', 'register_test_data.json')
+    json_path = os.path.join(base_dir, '..', 'data', 'register_test_data.json')
     with open(json_path, 'r', encoding='UTF-8') as file:
         return json.load(file)
 
