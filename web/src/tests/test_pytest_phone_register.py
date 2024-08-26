@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # 调用测试数据
 def load_test_data():
     base_dir = os.path.dirname(__file__)  # 获取当前文件所在的目录
-    json_path = os.path.join(base_dir, '..', 'data', 'register_test_data.json')
+    json_path = os.path.join(base_dir, '..', 'test_data_json', 'register_test_data.json')
     with open(json_path, 'r', encoding='UTF-8') as file:
         return json.load(file)
 
@@ -33,7 +33,7 @@ class TestRegister:
     # 方法前置处理
     def setup_method(self):
         # 打开注册页面
-        self.driver.get("http://192.168.140.129/index.php/Home/user/reg.html")
+        self.driver.get("http://172.22.175.97/index.php/Home/user/reg.html")
 
     # 方法后置处理
     def teardown_method(self):
@@ -75,7 +75,7 @@ class TestRegister:
             assert expected_result == self.driver.find_element(By.CLASS_NAME, "userinfo").text
 
             # 从mysql数据库删除注册成功的账号，便于后期重复运行此注册测试脚本
-            conn = pymysql.connect(host="192.168.140.129", user="root", password="123456", db="tpshop3.0", port=3306)
+            conn = pymysql.connect(host="172.22.175.97", user="root", password="123456", db="tpshop3.0", port=3306)
             cursor = conn.cursor()
             cursor.execute("DELETE FROM tp_users WHERE mobile = %s", username)
             conn.commit()

@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from web.tools.edgeDriver import get_EdgeDriver, quit_driver
 
 # 打开浏览器页面
-driver = get_EdgeDriver("http://192.168.140.129/index.php")
+driver = get_EdgeDriver("http://172.22.175.97/index.php")
 
 # 进入登录页面
 driver.find_element(By.LINK_TEXT, "登录").click()

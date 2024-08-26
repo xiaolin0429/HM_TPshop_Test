@@ -19,7 +19,7 @@ class TestLogin:
     # 方法前置处理
     def setup_method(self):
         # 打开浏览器页面
-        self.driver.get("http://192.168.140.129/index.php/Home/user/login.html")
+        self.driver.get("http://172.22.175.97/index.php/Home/user/login.html")
 
     # 方法后置处理
     def teardown_method(self):

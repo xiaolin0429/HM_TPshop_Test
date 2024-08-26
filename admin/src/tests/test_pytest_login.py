@@ -48,7 +48,7 @@ class TestLogin:
         在每个测试方法开始之前进行初始化设置。
         """
         # 打开浏览器页面
-        self.driver.get("http://192.168.140.129/index.php/Admin/Admin/login")
+        self.driver.get("http://172.22.175.97/index.php/Admin/Admin/login")
 
     # 方法后置处理
     def teardown_method(self):

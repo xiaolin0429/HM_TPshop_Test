@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from web.tools.edgeDriver import get_EdgeDriver, quit_driver
 
 # 打开网页
-driver = get_EdgeDriver("http://192.168.140.129/index.php")
+driver = get_EdgeDriver("http://172.22.175.97/index.php")
 
 # 页面操作
 # 进入注册页面

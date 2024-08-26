@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # 调用测试数据
 def load_test_data():
     base_dir = os.path.dirname(__file__)  # 获取当前文件所在的目录
-    json_path = os.path.join(base_dir, '..', 'data', 'order_test_data.json')
+    json_path = os.path.join(base_dir, '..', 'test_data_json', 'order_test_data.json')
     with open(json_path, 'r', encoding='UTF-8') as file:
         return json.load(file)
 
@@ -35,7 +35,7 @@ class TestOrder:
     @pytest.fixture(autouse=True)
     def setup_method(self):
         # 打开页面首页
-        self.driver.get("http://192.168.140.129/index.php")
+        self.driver.get("http://172.22.175.97/index.php")
         # 进入登录页面
         self.driver.find_element(By.LINK_TEXT, "登录").click()
 

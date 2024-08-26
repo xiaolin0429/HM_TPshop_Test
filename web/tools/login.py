@@ -5,7 +5,7 @@ from web.tools.edgeDriver import get_EdgeDriver
 
 def login():
     # 打开浏览器页面
-    driver = get_EdgeDriver("http://192.168.140.129/index.php")  # 此处使用的是本地部署的测试环境网站
+    driver = get_EdgeDriver("http://172.22.175.97/index.php")  # 此处使用的是本地部署的测试环境网站
 
     # 进入登录页面
     driver.find_element(By.LINK_TEXT, "登录").click()

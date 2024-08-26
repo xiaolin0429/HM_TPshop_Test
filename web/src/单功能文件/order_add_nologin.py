@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from web.tools.chromeDriver import quit_driver, get_chromeDriver
 
 # 打开浏览器页面
-driver = get_chromeDriver("http://192.168.140.129/index.php")
+driver = get_chromeDriver("http://172.22.175.97/index.php")
 # time.sleep(30)
 driver.implicitly_wait(5)
 # quit_driver(driver)

@@ -11,8 +11,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # 这里添加测试数据按照(username, password, verify_code, expected_result)格式填入
 def load_test_data():
-    base_dir = os.path.dirname(__file__)  # 获取当前文件所在的目录
-    json_path = os.path.join(base_dir, '..', 'data', 'login_test_data.json')
+    base_dir = os.path.dirname(__file__)
+    json_path = os.path.join(base_dir, '..', 'test_data_json', 'login_test_data.json')
     with open(json_path, 'r', encoding='UTF-8') as file:
         return json.load(file)
 
@@ -32,7 +32,7 @@ class TestLogin:
     # 方法前置处理
     def setup_method(self):
         # 打开浏览器页面
-        self.driver.get("http://192.168.140.129/index.php/Home/user/login.html")
+        self.driver.get("http://172.22.175.97/index.php/Home/user/login.html")
 
     # 方法后置处理
     def teardown_method(self):
